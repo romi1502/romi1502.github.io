@@ -1,0 +1,425 @@
+html, body {height : 142%}
+
+
+body {
+margin : 0 ;
+padding : 0 ; 
+background : #1D1D1D;
+text-align : center;
+font-size : 0.7em;
+color : #000 ;
+font-family : arial ;
+line-height : 18px;
+}
+
+/*  SITE
+********************************************************************/
+ 
+#site { 
+position : relative; 
+width : 992px;
+margin : 0 auto;
+text-align : left  ;
+padding :  0 ;
+min-height: 100%;
+background : url(images/bg-site.jpg) top right  repeat-y
+}
+     
+/*  HEADER
+********************************************************************/
+   
+#header {
+position : relative ; 
+height : 67px;
+background : url(images/header.jpg);
+margin : 0
+}
+
+/*  HEADER >> TITRE DU SITE >> H1
+********************************************************************/
+
+
+#header h1 {
+position : absolute ;
+top : -6666px ; 
+left : -6666px ; 
+color : #fff;
+margin : 0;
+padding : 0 ; 
+font-size : 2em ;
+text-transform : uppercase ; 
+font-weight : normal;  
+}
+
+#header #logo a{
+position : absolute ; 
+right : 3px; 
+top : 3px; 
+width : 51px;
+height : 51px;
+background : url(images/logoPetit.png); 
+}
+
+
+
+#header #logo span  {
+position : absolute ; 
+left : -9999px; 
+top : -9999px; 
+width : 154px;
+height : 47px;
+background : url(images/logo.gif); 
+}
+
+#search {
+position : absolute ; 
+left : 580px ; 
+top : 30px; 
+}
+
+#search .search {
+width : 140px;
+height : 18px;
+margin : 0;
+padding : 0 0 0 5px;
+border : 1px solid #6F6F6F ;
+float : left ; 
+}
+
+#search .search-ok {
+width : 19px;
+height : 20px;
+background : url(images/search.jpg);
+margin : 0;
+padding : 0 ;
+border : 0 ;
+float : left ;
+cursor:pointer ;
+}
+
+#search form {
+margin : 0;
+}
+ 
+#search p{
+margin : 0;
+}
+ 
+/*  HEADER >> SECOND PRINCIPAL
+********************************************************************/ 
+ 
+#second-menu {
+position : absolute ; 
+top : 60px ; 
+right : 0; 
+width : 247px;
+height : 44px;
+background : url(images/bg-second-menu.jpg);
+}
+
+#second-menu ul  {
+margin : 0;
+padding : 0 0 0 40px;
+list-style : none ; 
+}
+
+#second-menu li  {
+float : left ;
+background : url(images/bg-li-second-menu.jpg) 0 3px no-repeat ; 
+margin : 0 ;
+padding : 0 10px 0 10px;
+}
+
+#second-menu li:first-child  {
+background : none ; 
+}
+
+#second-menu li a  {
+color : #A4A4A4;
+text-decoration : none ;
+}
+
+#second-menu li a:hover  {
+color : #A4A4A4;
+text-decoration : underline ; 
+}
+
+/*  HEADER >> MENU PRINCIPAL
+********************************************************************/
+   
+#menu {
+position : absolute ; 
+top : 36px;
+left : 24px; 
+}
+	
+#menu  ul{
+list-style : none ;
+margin : 0; 
+padding : 0 ;
+}
+
+#menu  li{
+float : left ;
+}
+	
+#menu  li a{
+margin : 0 ; 
+padding : 0 10px 0 10px ; 
+text-decoration : none ;    
+color : #979797 ;
+font-weight : bold ;
+background : url(images/bg-li-first-menu.jpg) left no-repeat ; 
+}
+
+#menu  li a:hover {    
+color : #A3106C ;
+}
+
+/*  MAIN
+********************************************************************/
+
+#main {
+overflow : auto ;
+padding :  0 0 40px 0;
+}
+	
+/*  CONTENU
+********************************************************************/	
+	
+#contenu {
+width : 538px ;
+float  : left ;
+margin : 0;
+padding : 20px 0 0 0   ;
+}
+
+#contenu   h2 {
+font-size : 1.4em ; 
+padding :  0 ; 
+margin: 0 ;
+color : #000 ; 
+font-family : times; 
+}
+
+#contenu  h3 {
+font-size : 1em ; 
+padding :  0 0 0 20px ; 
+margin: 10px 0 0 0 ;
+color : #277CFA ; 
+}
+
+#contenu  h4 {
+font-size : 1em ; 
+padding :  0 0 0 20px ; 
+margin: 10px 0 0 0 ;
+color : #091348 ; 
+}
+
+#contenu p {
+	text-indent:20px;
+	}
+
+#contenu ul {
+color : #091348 ; 
+list-style : none;
+margin : 0; 
+padding :  0 0 0 20px;
+}
+
+#contenu li {
+background : url(images/bg-li.jpg) 0 5px no-repeat ; 
+padding : 0 0 10px 12px; 
+}
+
+
+/*  POST
+********************************************************************/
+
+.post {
+width : 498px ;  
+float : left ;
+padding : 0 0 20px 0;  
+margin : 0 0 0 20px ; 
+text-align : justify;
+}
+
+.post  .date {
+font-weight : bold ; 
+color : #A3106C ; 
+margin : 10px 0 5px 0;
+}
+
+/*  SIDE
+********************************************************************/
+   
+#side {
+width : 207px ;
+float  : left ;
+padding :  20px 0 0 0  ;
+margin : 0 ; 
+}
+	
+#side h2 {
+font-size : 1.2em ;
+margin : 0 ;
+padding :  0 ; 
+color : #2468DA ; 
+}
+
+#side h3 {
+font-size : 1em ;
+margin :  10px 0 10px 0 ;
+padding :  0 ; 
+color : #277CFA ; 
+}
+
+#side ul {
+list-style : none ; 
+margin : 0 0 0 18px ; 
+padding : 0; 
+color : #000 ;
+width : 188px;
+}
+
+#side li {
+margin : 0 ;
+padding : 0 0 0 20px; 
+}
+
+#side li a {
+font-size : 1em ;
+margin : 0 ;
+padding :   0 0 0 10px; 
+height : 42px;
+line-height : 42px; 
+display : block ; 
+color : #fff ;
+background : url(images/bg-li-r-side.jpg) 0 40px no-repeat;
+text-decoration : none ; 
+}
+
+#side li a.active {
+background : url(images/bg-li-r-side.jpg) 0 0 no-repeat;
+}
+  
+#side li a:hover{
+background : url(images/bg-li-r-side.jpg) 0 0 no-repeat;
+}
+
+#side li.active{
+background : url(images/bg-li-r-side.jpg) 0 0 no-repeat;
+}
+
+#side p{
+margin : 10px 0 25px 0 ; 
+padding : 0 0 10px 0;
+color : #277CFA ;
+border-bottom : 1px dotted #277CFA ; 
+}
+
+#side span {
+margin : 0 ; 
+padding : 0;
+color : #277CFA ;
+}
+
+/*  RIGHT SIDEBAR
+********************************************************************/
+
+#right-sidebar {
+float : left ; 
+width : 215px ;
+padding : 40px  0 0 22px;  
+}
+ 
+#right-sidebar .box {
+border : 1px solid #000;
+background : #fff;
+padding : 5px 0 0 0 ;
+margin : 0 0 10px 0;
+width : 200px; 
+}
+
+#right-sidebar .box .meta {
+background : #606060;
+height : 20px;
+margin : 0 0 10px 0;
+}
+
+#right-sidebar .box p {
+text-align : justify;
+padding : 0 10px ; 
+margin : 0 0 5px 0;
+}
+
+span.titre {
+padding : 0 0 0 10px ; 
+color : #fff;
+float : left ; 
+}
+
+span.date {
+padding : 0 10px 0 10px  ; 
+color : #000;
+float : right ; 
+background : #A8A8A8  ;
+height : 20px; 
+}
+
+#right-sidebar ul {
+list-style : none ; 
+margin : 0 0 10px 10px;
+padding : 0; 
+}
+
+#right-sidebar  li a {
+color : #000;
+text-decoration : none ;  
+}
+
+#right-sidebar img {
+border: 1px solid; 
+} 
+
+
+/*  FOOTER
+*******************************************************************/ 
+   
+#footer { 
+position : absolute ; 
+bottom : 0; 
+left : 207px ; 
+width : 538px; 
+height :20px;
+line-height : 20px; 
+font-size : 90%;
+background : #ccc ;
+text-align : left ; 
+color : #000; 
+text-align : center; 
+}
+
+#footer p { 
+margin : 0 ; 
+padding : 0 ; 
+}
+
+#footer img { 
+float : left ;
+margin : 0 0 0 -70px ; 
+}
+
+#footer a { 
+color : #000;
+text-decoration : none ;  
+}
+
+#footer a:hover { 
+text-decoration : underline ;  
+}
+
+
+
+   
+ 

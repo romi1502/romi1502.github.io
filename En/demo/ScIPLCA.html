@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="Romain Hennequin" />
+<meta name="Description" content="Romain Hennequin's webpage about his research on Music Information Retrieval" />
+<meta name="Keywords" content="Romain Hennequin, research, Music Information Retrieval, Non negative matrix factorization" />
+<title>Romain Hennequin</title>
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../../js/picSwitchScipt.js"></script>
+
+</head>
+
+
+
+<body onLoad="checkCookie()">
+
+<div id="site">
+<div id="header">
+<div id="logo"><a href="#"><span>Rien</span></a></div></div>
+
+<div id="menu">
+<ul>
+<li><a href="../../En/index.html">English <img src="../../images/flag_uk.jpg" width="18" height="10" alt="Drapeau anglais" /></a></li>
+<li><a href="../../index.html">Francais <img src="../../images/flag_fr.jpg" width="18" height="10"  alt="Drapeau francais"/></a></li>
+ </ul>
+</div>
+
+<div id="side">
+<ul>
+<li><a href="../../En/index.html">Home</a></li>
+<li><a href="../../En/publications/publications.html">Publications</a></li>
+<li><a href="../../En/teaching/teaching.html">Teaching</a></li>
+<li><a href="../../En/links.html">Links</a></li>
+<li><a href="../../En/contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div id="contenu">
+	<div class="post">
+	<h1>Single note repitching in a polyphonic signal</h1>
+	<p>
+	On this page is presented an application of the Scale-Invariant Probabilistic Latent Component Analysis (SIPLCA) described in 
+<a href="http://service.tsi.telecom-paristech.fr/cgi-bin/valipub_download.cgi?dId=227">
+this technical report</a>.
+	</p>
+	<p>
+SIPLCA makes it possible to separate single notes in a polyphonic signal: one can synthesize a time-frequency mask corresponding to a single note by keeping only a small area around the position of the note in the impulse distribution (the remaining is set to 0), positions of notes being clearly discernible in the impulse distribution.
+
+Thus we can easily isolate a single note using Wiener filtering.
+Once a note is isolated, it is easy to repitch it individually.
+	</p>
+	
+ 
+		<h2>Introduction of <i>Because</i></h2>
+	<p>
+	In this example the spectrogram of the 12 first seconds of the song <i>Because</i> by the Beatles is decomposed with a single template. 
+	</p>
+	
+		<h3>Original sound <embed src="../../sounds/becauseIntroMono.wav" autoplay=false height=20 width=100 /></h3>
+	<p>
+	The obtained impulse distribution is represented below. Actually played notes are materialized by a rectangle in the figure. We can see that in all rectangles, the impulse distribution takes high values. 
+	</p>
+<img alt="Impulse distribution" src="../../images/impulseBecause.png"  width="510" height="380" />
+	<p>
+	Repitching individually several notes in the signal, we can obtain the following sound:	
+	</p>
+		<h3>Processed sound <embed src="../../sounds/becauseProcessed.wav" autoplay=false height=20 width=100 /></h3>
+		<p></p>
+		<h2>Introduction of <i>Guaranteed</i></h2>
+		<p>		This second example is the introduction of <i>Guaranteed</i> by Eddie Vedder: 
+		</p>
+		<h3>Original sound <embed src="../../sounds/Guaranteed.wav" autoplay=false height=20 width=100 /></h3>
+		<p>In this example, we change the key from major to minor:
+		</p>
+		<h3>Processed sound <embed src="../../sounds/GuaranteedKeyChanged.wav" autoplay=false height=20 width=100 /></h3>
+		<p></p>
+		<h2>Introduction of <i>Fantasy Impromptu </i></h2>
+		<p>		This third example is the introduction of <i>Fantasy Impromptu </i> by Frederic Chopin: 
+		</p>
+		<h3>Original sound <embed src="../../sounds/ChopinNorm.wav" autoplay=false height=20 width=100 /></h3>
+		<p>In this example, we change some notes:
+		</p>
+		<h3>Processed sound <embed src="../../sounds/ChopinMod.wav" autoplay=false height=20 width=100 /></h3>		
+	</div>
+</div>
+
+<div id="right-sidebar">
+
+	<img alt="Photo de moi" src="../../images/pixel.png" id="imgMoi" width="204" height="279" onmouseover="mouseOver()" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()" />
+		<p style="text-align:right"> <small><span  id="hdfr" onmouseover="mouseOver()" onmouseout="mouseOut()" onmousedown="mouseDown()" onmouseup="mouseUp()">Don't Like this picture?<span/></small></p>
+
+</div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+RedirectPermanent /database.zip /ressources/database.zip
+RedirectPermanent /demoSIPLCA.html /En/demo/ScIPLCA.html
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
